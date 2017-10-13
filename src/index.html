@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div id="resultboxRender">
+
+      </div>
+      <script id="entry-template" type="text/x-handlebars-template">
+        {{#each questions}}
+          <div class="main-data {{class}}">
+            <h2>{{title}}</h2>
+            <form action="">
+              {{#each options}}
+                <div class="control">
+                  <input type="radio" name="num" value="{{type}}" id="{{id}}"> <label for="{{id}}">{{value}}</label><br>
+                </div>
+              {{/each}}
+              <input type="button" name="" value="Submit Answer" class="calculate" data-val="{{qNumber}}">
+            </form>
+
+          </div>
+        {{/each}}
+
+      </script>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="scripts/kbc-data.js"></script>
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+
+    <script src="scripts/handlebars-v4.0.10.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

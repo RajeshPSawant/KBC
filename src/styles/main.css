@@ -1,0 +1,18 @@
+/**
+ * main.scss
+ */
+
+input[type=radio]{
+   margin: 0 10px 20px 0;
+ }
+ h2{
+   margin: 50px 0 30px;
+ }
+ input[type=button]{
+   margin: 20px 0 0 0;
+ }
+ .step2{
+   display: none;
+ }
+
+// @import "";
